@@ -17,7 +17,7 @@ fn main() {
 
     for i in 0..50000 {
         for thin in 0..1000 {
-            x = rgsl::randist::gamma::gamma(&r, 3.0, y*y + 4.0);
+            x = rgsl::randist::gamma::gamma(&r, 3.0, 1.0 / (y*y + 4.0));
             y = 1.0/(x+1.0) + rgsl::randist::gaussian::gaussian(&r, 1.0/(2.0*x+2.0).sqrt());
         }
         println!("{} {} {}", i, x, y);
