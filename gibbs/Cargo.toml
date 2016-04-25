@@ -1,0 +1,7 @@
+[package]
+name = "gibbs"
+version = "0.1.0"
+authors = ["Rui Vieira <ruidevieira@googlemail.com>"]
+
+[dependencies]
+GSL = "0.4"
